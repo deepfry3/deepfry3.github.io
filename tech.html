@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Alpha by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Cameron Bennetts</a> | Portfolio - Tech Demos</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Navigate</a>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="productions.html">Major Productions</a></li>
+									<li><a href="jams.html">Game Jams</a></li>
+									<li><a href="tech.html"><b><i>Tech Demos</b></i></a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#cta" class="button">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+				
+					<header>
+						<h2>Tech Demos</h2>
+						<p>
+							Some examples of technical demonstrations I've created. All made as solo course assessment projects, these were each
+							used to learn a new concept in a custom environment, before applying
+							the concept in a more advanced manner using the Unity engine.
+						</p>
+					</header>
+					
+					<!-- OpenGL Renderer! -->
+					<div id="open-gl-renderer" class="box">
+						<span class="image featured"><img src="images/open-gl-renderer.gif" alt="" /></span>
+						<h3>OpenGL Graphics Renderer</h3>
+						<p>
+							This project was created as part of an assessment to create a basic custom graphics engine using OpenGL.
+							<br>
+							It uses a projection matrix camera, with first-person flying controls, which can be used to inspect a spinning mesh with coloured light sources,
+							detailed with albedo, normal and specular maps.
+							While my implementation isn't a comprehensive game engine by any means, it gave me a fundamental understanding about aspects of the graphics pipeline and custom shaders,
+							as well as technical aspects of how 3D assets work, and asset management.
+							<br>
+							Developing this lead into the more advanced application of shaders using Shader Graph, as seen below.
+						</p>
+					</div>
+					
+					<!-- Shaders and Animation -->
+					<div id="shaders_and_animation" class="box">
+						<span class="image featured"><img src="images/shaders-and-animations.gif" alt="" /></span>
+						<h3>Unity Shaders and Animation Project</h3>
+						<p>
+							<p>
+							This project was an experimentation with ShaderGraph functionality built into the Unity engine, as well as Animation blend trees,
+							and how the two integrate with a C# Unity codebase.
+							<br>
+							It contains a set of shaders I created to alter the appearance of a 3D animated character, and the ability to select different
+							animations with callbacks - such as a sit-ups animation with a UI counter.
+							<br>
+							This project gave me familiarity with more technical aspects of the Unity engine that I hadn't interacted with prior.
+							<br><br>
+						</p>
+					</div>
+					
+					<!-- 2D Rigid Body Physics -->
+					<div id="2d_rigid_body_physics" class="box">
+						<span class="image featured"><img src="images/2d-rigid-body-physics.gif" alt="" /></span>
+						<h3>2D Rigid Body Physics Demonstration</h3>
+						<p>
+							<p>
+							This project was created as an exercise in basic physics and collision detection with different shapes.
+							You are able to place static and dynamic squares, circles or planes and marvel at the the way in which shapes avoid being inside one another.
+							<br>
+							Having had experience with physics in a 2D environment was the inspiration for me to experiment further with 3D physics in the following project.
+						</p>
+					</div>
+					
+					<!-- 2D Rigid Body Physics -->
+					<div id="rope_simulation" class="box">
+						<span class="image featured"><img src="images/rope-simulation.gif" alt="" /></span>
+						<h3>Rope Simulation with Verlet Integration</h3>
+						<p>
+							<p>
+							My goal for this project was to create a rope/cable that appeared physically accurate, and inspired by having dabbled with 2D physics in an earlier
+							project, and having recently been impressed with the rope physics in recent Naughty Dog games.
+							<br>
+							I created a basic playground environment to be able to attack and detach ends of a rope to static or dynamic rigid bodies, and gave the ropes
+							tension in order to demonstrate how physical bodies affect the rope, and it affects them back. This was sufficient, but the surprising ease with which
+							verlet integration solved basic rope simulation, I experimented with adding additional features, which have enabled me to use the system in other projects,
+							particularly visual flair.
+							<br><br>
+							<b>Extras</b><br>
+							Integrating breakable ropes felt like the logical next step to me, as the rope was already being simulated via nodes 'strung' together.
+							While not quite that simple, I integrated a system to manually cut ropes, or cause them to break (in roughly the middle, or the spot most under tension) when
+							the differentation between nodes exceeds a threshold.
+							<br>
+							In addition, as I wanted to use this asset for visual flair in other projects, I integrated a smoothing algorithm to be able to simulate ropes using very
+							few nodes, whilst keeping the appearance high fidelity. I also implemented real-time mesh generation for cases where using using a textured line with billboarding
+							is insufficient.
+							<br><br>
+							I'm still working on this project, and intend to add more features to make it viable to be used as more than visual flair in future games.
+						</p>
+					</div>
+					
+				</section>
+					
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/cameron-bennetts-073b43246/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<!--<li>&copy; Untitled. All rights reserved.</li>--><li>Design Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -51,6 +51,7 @@
 						<span class="image featured"><img src="images/open-gl-renderer.gif" alt="" /></span>
 						<h3>OpenGL Graphics Renderer</h3>
 						<p>
+							<b>Description</b><br>
 							This project was created as part of an assessment to create a basic custom graphics engine using OpenGL.
 							<br>
 							It uses a projection matrix camera, with first-person flying controls, which can be used to inspect a spinning mesh with coloured light sources,
@@ -60,6 +61,12 @@
 							as well as technical aspects of how 3D assets work, and asset management.
 							<br>
 							Developing this lead into further experimentation with advanced shaders with Unity's Shader Graph, as seen below.
+							<br><br>
+							<b>Implementation</b><br>
+							Written in C++ using the GLFW and GLM OpenGL libraries. 3D mesh files and their 2D textures are loaded into
+							RAM/VRAM at runtime and stored as a mesh/object class, which can have its transform matrix properties manipulated.
+							<br>
+							The basic Lit shader is written using GLSL.
 						</p>
 					</div>
 					
@@ -68,15 +75,20 @@
 						<span class="image featured"><img src="images/shaders-and-animations.gif" alt="" /></span>
 						<h3>Unity Shaders and Animation Project</h3>
 						<p>
-							<p>
+							<b>Description</b><br>
 							This project was an experimentation with ShaderGraph functionality built into the Unity engine, as well as Animation blend trees,
 							and how the two integrate with a C# Unity codebase.
 							<br>
-							It contains a set of shaders I created to alter the appearance of a 3D animated character, and the ability to select different
+							It contains a set of 6 shaders I created to alter the appearance of a 3D animated character, and the ability to select 6 different
 							animations with callbacks - such as a sit-ups animation with a UI counter.
 							<br>
 							This project gave me familiarity with more technical aspects of the Unity engine that I hadn't interacted with prior.
 							<br><br>
+							<b>Implementation</b><br>
+							Except for basic Lit/Unlit, each shader was created using Shader Graph. Animation assets were imported and played back using
+							a custom animation controller and blend tree, including additional un-selectable random idle events, and transitional animations.
+							<br>
+							Unity's Animation Events system was used to drive various callbacks.
 						</p>
 					</div>
 					
@@ -85,11 +97,16 @@
 						<span class="image featured"><img src="images/2d-rigid-body-physics.gif" alt="" /></span>
 						<h3>2D Rigid Body Physics Demonstration</h3>
 						<p>
-							<p>
+							<b>Description</b><br>
 							This project was created as an exercise in physics and collision detection with different shapes.
 							You are able to place static and dynamic squares, circles or planes and marvel at the the way in which shapes avoid being inside one another.
 							<br>
 							The experience of physics simulations in a 2D environment utilized in this project was the inspiration for me to experiment further with customized 3D physics within Unity in the following project.
+							<br><br>
+							<b>Implementation</b><br>
+							Custom physics and collision simulation was written using C++, again using OpenGL rendering libraries, and ImGui for text.
+							<br>
+							I implemented collision detection and resolution for each potential pair between static and dynamic squares, circles and planes.
 						</p>
 					</div>
 					
@@ -98,7 +115,7 @@
 						<span class="image featured"><img src="images/rope-simulation.gif" alt="" /></span>
 						<h3>Rope Simulation with Verlet Integration</h3>
 						<p>
-							<p>
+							<b>Description</b><br>
 							My goal for this project was to create a physically accurate rope/cable, and was inspired by rope physics in recent Naughty Dog games.
 							<br>
 							In addition to the rope system itself, I created a basic playground environment to be able to attach and detach ends of a rope to static or dynamic rigid bodies,
@@ -117,6 +134,18 @@
 							is insufficient.
 							<br><br>
 							I'm still working on this project, and intend to add more features to make it viable to be used as more than visual flair in future games.
+							<br><br>
+							<b>Implementation</b><br>
+							Using a custom C# script, my rope simulation was built in the Unity engine. Several parameters allow tweakable appearance (radius, smoothing, etc.), simulation (tension, length, tearing, etc.), and 
+							external forces (optionally locking ends to a transform, attaching a transform or rigid body anywhere on the rope, etc.).
+							<br>
+							The rope is simulated using a list of 'nodes' that store only their previous and current position, from which everything else is derived. As well as being affected (or not) by gravity,
+							nodes push and pull on one another by caculating their delta from a pre-calculated segment length, while also depenetrating themselves from any colliders.
+							<br>
+							For rendering, the rope can be smoothened using Chaikin's corner-cutting algorithm to generate additional 'nodes' for rendering only. The node positions can be output to Unity's Line Renderer component,
+							or optionally used to generate a cylindrically-shaped mesh on a fixed update loop.
+							
+							
 						</p>
 					</div>
 					

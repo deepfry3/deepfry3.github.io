@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cameron Bennetts | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Cameron Bennetts</a> | Portfolio - Code Samples</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">Navigate</a>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="productions.html">Major Productions</a></li>
+									<li><a href="jams.html">Game Jams</a></li>
+									<li><a href="tech.html">Tech Demos</a></li>
+									<li><a href="blog.html">Dev Blog</a></li>
+									<li><a href="code.html"><b><i>Code Samples</b></i></a></li>
+								</ul>
+							</li>
+							<li><a href="index.html#cta" class="button">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+				
+					<header>
+						<h2>C++ Code Samples</h2>
+						<p>
+							Some small samples C++ code I've written while learning the language.
+						</p>
+					</header>
+					
+					<!-- 2D Physics -->
+					<div id="code_2d_physics" class="box">
+						<h3>2D Physics - CollisionFunctions.cpp</h3>
+						<p>
+							Manages collision detection and response for each shape-to-shape collision combination for my 
+							<a href="tech.html#2d_rigid_body_physics">2D Physics project</a>.
+							<br>
+							This script is primarily calculating shape overlaps, collision normals, etc. In the build, you can click
+							to place shapes, and right-click to place planes.
+							<br><br>
+							<a href="files/Code Examples/C++/2D Physics/CollisionFunctions.cpp">CollisionFunctions.cpp</a><br>
+							<a href="files/Code Examples/C++/2D Physics/Build.zip">Build.zip</a> (extract; run Build.exe)
+						</p>
+					</div>
+					
+					<!-- A* Pathfinding -->
+					<div id="code_pathfinding" class="box">
+						<h3>A* Pathfinding - Pathfinder.cpp</h3>
+						<p>
+							Implements the A* pathfinding algorithm to find the best path to take on a representation of the Melbourne PTV 
+							train network. 
+							<br>
+							This script is primarily for performing pathfinding, and also hard-codes the rail map, which is admittedly outrageous 
+							but did the job at the time. In the build, you can click to create path start/end points, and press space bar to
+							toggle path visibility.
+							<br><br>
+							<a href="files/Code Examples/C++/A-Star Pathfinding/Pathfinder.cpp">Pathfinder.cpp</a><br>
+							<a href="files/Code Examples/C++/A-Star Pathfinding/Build.exe">Build.exe</a>
+						</p>
+					</div>
+					
+					<!-- Binary Tree -->
+					<div id="code_binary_tree" class="box">
+						<h3>BinaryTree.h</h3>
+						<p>
+							Implements the Binary Tree pattern, and includes a very basic GUI in the build for managing and displaying nodes.
+							<br>
+							This header-only script includes a 'Draw' function to interface with the application, but was otherwise developed for a
+							simple C++ data structures library. The build provides buttons and an input field to create a graphical Binary Tree
+							of numbers.
+							<br><br>
+							<a href="files/Code Examples/C++/Binary Tree/BinaryTree.h">BinaryTree.h</a><br>
+							<a href="files/Code Examples/C++/Binary Tree/Build.exe">Build.exe</a>
+						</p>
+					</div>
+					
+					<!-- Linked List -->
+					<div id="code_linked_list" class="box">
+						<h3>LinkedList.h</h3>
+						<p>
+							Implements the Linked List pattern, and demonstrates it with a basic console application to interface with it.
+							<br>
+							This header-only script includes the entire Linked List developed for a simple C++ data structures library, and the
+							build can be interfaced with by typing the prompts shown into the console.
+							<br><br>
+							<a href="files/Code Examples/C++/Linked List/LinkedList.h">LinkedList.h</a><br>
+							<a href="files/Code Examples/C++/Linked List/Build.exe">Build.exe</a>
+						</p>
+					</div>
+					
+					<!-- Tic Tac Toe -->
+					<div id="code_tic_tac_toe" class="box">
+						<h3>Tic Tac Toe - Board.cpp, Source.cpp</h3>
+						<p>
+							A basic console-based Tic Tac Toe game I created as an introduction to C++ development.
+							<br>
+							These scripts make up effectively the entire game, and the build can be interfaced with by typing 
+							the prompts shown into the console.
+							<br><br>
+							<a href="files/Code Examples/C++/Tic Tac Toe/Board.cpp">Board.cpp</a><br>
+							<a href="files/Code Examples/C++/Tic Tac Toe/Source.cpp">Source.cpp</a><br>
+							<a href="files/Code Examples/C++/Tic Tac Toe/Build.exe">Build.exe</a>
+						</p>
+					</div>
+					
+					
+					<header>
+						<h2>C# Code Examples</h2>
+						<p>
+							Some small samples C# code I've written while learning the language.<br>I'm familiar with native C#, but these scripts 
+							were made for projects in the Unity engine.
+						</p>
+					</header>
+					
+					<!-- Pancake Panic! Player -->
+					<div id="code_pancake_panic_player" class="box">
+						<h3><i>Pancake Panic!</i> - Player.cs</h3>
+						<p>
+							The primary script for managing each player in 
+							<a href="productions.html#pancake_panic"><i>Pancake Panic!</i></a>, including managing inputs, movement and combat,
+							triggering animations and tracking player stats. With hindsight, many aspects of this script could be improved, and it should
+							have been made more modular, but this was the first large Unity project I developed, and was the sole programmer on.
+							<br><br>
+							<a href="files/Code Examples/C-Sharp/Pancake Panic!/Player.cs">Player.cs</a>
+						</p>
+					</div>
+					
+					<!-- Verlet Rope -->
+					<div id="code_verlet_rope" class="box">
+						<h3>Rope Simulation - VerletRope.cs</h3>
+						<p>
+							The primary script I developed as part of my
+							<a href="tech.html#rope_simulation">Rope Simulation</a> project.
+							<br>
+							Some aspects are still commented as WIP, but everything I wrote about when describing the project
+							is contained within this one script.
+							<br><br>
+							<a href="files/Code Examples/C-Sharp/Verlet Rope/VerletRope.cs">VerletRope.cs</a>
+						</p>
+					</div>
+					
+				</section>
+					
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/cameron-bennetts-073b43246/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://deepfry3.itch.io" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<!--<li>&copy; Untitled. All rights reserved.</li>--><li>Design Template: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
